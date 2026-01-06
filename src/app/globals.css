@@ -64,3 +64,7 @@ body {
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
+
+.safe-area-inset-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
