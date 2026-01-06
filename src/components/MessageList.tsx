@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { MessageBubble } from './MessageBubble';
-import FadeContent from './FadeContent';
 
 interface Message {
   id: string;
@@ -48,9 +47,9 @@ export const MessageList: React.FC<MessageListProps> = ({ messages, onExampleCli
         </div>
       ) : (
         messages.map((message) => (
-          <FadeContent key={message.id}>
+          <div key={message.id} className="animate-fade-in">
             <MessageBubble message={message.text} isUser={message.isUser} />
-          </FadeContent>
+          </div>
         ))
       )}
       <div ref={messagesEndRef} />
