@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChatInterface } from './components/ChatInterface';
 import GlassSurface from './components/GlassSurface';
 import DarkVeil from './components/DarkVeil';
